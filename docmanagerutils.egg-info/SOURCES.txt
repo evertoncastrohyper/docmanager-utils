@@ -1,0 +1,9 @@
+setup.py
+docmanagerutils/__init__.py
+docmanagerutils/bucket.py
+docmanagerutils.egg-info/PKG-INFO
+docmanagerutils.egg-info/SOURCES.txt
+docmanagerutils.egg-info/dependency_links.txt
+docmanagerutils.egg-info/not-zip-safe
+docmanagerutils.egg-info/requires.txt
+docmanagerutils.egg-info/top_level.txt

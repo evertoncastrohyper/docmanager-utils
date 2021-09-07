@@ -7,9 +7,9 @@ import hashlib
 from google.oauth2 import service_account
 from six.moves.urllib.parse import quote
 
-def bucket_content_signer(service_account_file, bucket_name, object_name,
-                        subresource=None, expiration=604800, http_method='GET',
-                        query_parameters=None, headers=None):
+def object_signer(service_account_file, bucket_name, object_name,
+                subresource=None, expiration=604800, http_method='GET',
+                query_parameters=None, headers=None):
 
     if expiration > 604800:
         print('Expiration Time can\'t be longer than 604800 seconds (7 days).')
@@ -90,8 +90,3 @@ def bucket_content_signer(service_account_file, bucket_name, object_name,
         scheme_and_host, canonical_uri, canonical_query_string, signature)
 
     return signed_url
-
-
-if __name__ == "__main__":
-    url = bucket_content_signer("pdb-staging-signer-key.json", "scanned-pdb-staging", "0026104f364b4438b9e97874725c786c", expiration=10)
-    print(url)

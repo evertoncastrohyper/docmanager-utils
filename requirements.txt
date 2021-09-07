@@ -1,3 +1,2 @@
-google-auth==1.35.0
-artifacts-keyring
-twine
+google-auth
+google-cloud-core
