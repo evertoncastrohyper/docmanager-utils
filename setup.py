@@ -1,7 +1,7 @@
 from setuptools import setup
 setup(
     name='docmanagerutils',
-    version='0.1',
+    version='0.0.1',
     description='Doc Manager Utils',
     url='https://github.com/evertoncastrohyper/docmanager-utils',
     author='Everton Castro',
